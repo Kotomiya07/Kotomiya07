@@ -1,0 +1,58 @@
+version: 1
+github:
+  username: Kotomiya07
+identity:
+  name: Kotomiya
+  headline: PREMODERN JAPANESE TEXTS × ML
+  tagline: Building machine learning tools for recognizing, annotating, and structuring premodern Japanese texts
+theme:
+  preset: terminal
+  primary: "#B6493A"
+  secondary: "#315B73"
+links:
+  - label: GitHub
+    url: https://github.com/Kotomiya07
+layers:
+  - name: ANNOTATE
+    project: kuzushiji-column
+    description: Organizes character bounding boxes into columns and segments with manual correction and HITL retraining
+    tone: primary
+  - name: RECOGNIZE
+    project: kuzushiji-vision
+    description: Combines YOLO character localization with language models for kuzushiji recognition
+    tone: primary
+  - name: DATASET
+    project: kuzushiji-hf-converter
+    description: Converts annotations into Hugging Face Datasets and COCO or YOLO formats
+    tone: primary
+  - name: EDIT
+    project: kotenseki-annotator-web
+    description: Web-based annotation editor for premodern Japanese book images, currently under development
+    tone: secondary
+  - name: GENERATE
+    project: soan-professional
+    description: Reproducibly generates classical and historical Japanese character images with metadata
+    tone: secondary
+flagships:
+  - repo: kuzushiji-vision
+    role: RECOGNITION
+    description: Kuzushiji recognition with YOLO character localization, language models, and a FastAPI/HTMX inference UI
+    tone: primary
+  - repo: kuzushiji-column
+    role: ANNOTATION
+    description: Column annotation web app connecting manual correction, model inference, HITL retraining, and dataset updates
+    tone: primary
+  - repo: kuzushiji-hf-converter
+    role: DATA PIPELINE
+    description: Data conversion for page- and character-level Hugging Face Datasets plus COCO and YOLO formats
+    tone: secondary
+module_groups:
+  - name: More pinned work
+    projects:
+      - repo: soan-professional
+        description: TypeScript CLI for reproducibly generating classical and historical Japanese character images with metadata
+      - repo: kotenseki-annotator-web
+        description: Annotation editor for premodern Japanese book images built with FastAPI, HTMX, and Fabric.js
+settings:
+  show_stars: false
+  show_badges: false
