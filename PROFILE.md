@@ -20,16 +20,20 @@ npm run --prefix ../profile-control-plane build
 node ../profile-control-plane/dist/cli.js check --config profile.yaml --online
 node ../profile-control-plane/dist/cli.js build --config profile.yaml --out .profile-output --force
 python3 scripts/apply-dark-theme-colors.py .profile-output/assets
+python3 scripts/simplify-hero.py .profile-output/assets
+python3 scripts/simplify-readme.py .profile-output/README.md
 cp .profile-output/README.md README.md
-cp .profile-output/assets/*.svg assets/
+cp .profile-output/assets/hero-*.svg assets/
 ```
 
-Do not edit the generated `README.md` or `assets/*.svg` directly. Update `profile.yaml` and regenerate them whenever the displayed content changes. The post-processing step gives small accent text in the dark-theme SVGs sufficient contrast while preserving the darker accents used by the light-theme SVGs.
+Do not edit the generated `README.md` or `assets/*.svg` directly. Update `profile.yaml` or the post-processing scripts and regenerate the profile whenever the displayed content changes. The color post-processing step gives small accent text in the dark-theme SVG sufficient contrast while preserving the darker accents used by the light-theme SVG. The hero post-processing step removes the generated repository listing, and the README post-processing step keeps the simplified Terminal hero and adds responsive GitHub Stats cards while leaving repository discovery to GitHub's native pinned section.
 
 ## Verification Checklist
 
 - Confirm that all content is readable in both dark and light themes
 - Confirm that a 390px viewport has no horizontal overflow
 - Confirm that animations stop when `prefers-reduced-motion` is enabled
-- Confirm that the featured repositories match the current GitHub pinned repositories
+- Confirm that repository discovery is left to GitHub's native pinned section
+- Run `python3 -m unittest discover -s tests -v`
+- Confirm that regeneration leaves `README.md` and `assets/hero-*.svg` unchanged
 - Confirm that `git diff --check` succeeds
