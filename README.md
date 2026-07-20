@@ -4,20 +4,13 @@
   <img alt="Kotomiya terminal session" src="assets/hero-light.svg" width="100%">
 </picture>
 
-Building machine learning tools for recognizing, annotating, and structuring premodern Japanese texts
+Building machine learning tools for recognizing, annotating, and structuring premodern Japanese texts.
 
-<p align="center">
+<p>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-seven-sigma-13.vercel.app/api?username=Kotomiya07&amp;custom_title=Kotomiya07%27s%20GitHub%20Stats&amp;show_icons=true&amp;include_all_commits=true&amp;hide_border=true&amp;title_color=58A6FF&amp;text_color=C9D1D9&amp;icon_color=58A6FF&amp;bg_color=0D1117">
     <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-seven-sigma-13.vercel.app/api?username=Kotomiya07&amp;custom_title=Kotomiya07%27s%20GitHub%20Stats&amp;show_icons=true&amp;include_all_commits=true&amp;hide_border=true&amp;title_color=0969DA&amp;text_color=1F2328&amp;icon_color=0969DA&amp;bg_color=FFFFFF">
-    <img alt="Kotomiya07 GitHub statistics" src="https://github-readme-stats-seven-sigma-13.vercel.app/api?username=Kotomiya07&amp;custom_title=Kotomiya07%27s%20GitHub%20Stats&amp;show_icons=true&amp;include_all_commits=true&amp;hide_border=true&amp;title_color=0969DA&amp;text_color=1F2328&amp;icon_color=0969DA&amp;bg_color=FFFFFF" width="495">
-  </picture>
-</p>
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-seven-sigma-13.vercel.app/api/top-langs/?username=Kotomiya07&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;title_color=58A6FF&amp;text_color=C9D1D9&amp;bg_color=0D1117">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-seven-sigma-13.vercel.app/api/top-langs/?username=Kotomiya07&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;title_color=0969DA&amp;text_color=1F2328&amp;bg_color=FFFFFF">
-    <img alt="Kotomiya07 most used languages" src="https://github-readme-stats-seven-sigma-13.vercel.app/api/top-langs/?username=Kotomiya07&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;title_color=0969DA&amp;text_color=1F2328&amp;bg_color=FFFFFF" width="495">
+    <img alt="Kotomiya07 GitHub statistics" src="https://github-readme-stats-seven-sigma-13.vercel.app/api?username=Kotomiya07&amp;custom_title=Kotomiya07%27s%20GitHub%20Stats&amp;show_icons=true&amp;include_all_commits=true&amp;hide_border=true&amp;title_color=0969DA&amp;text_color=1F2328&amp;icon_color=0969DA&amp;bg_color=FFFFFF" width="450" align="top">
   </picture>
 </p>
 

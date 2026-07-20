@@ -26,7 +26,7 @@ cp .profile-output/README.md README.md
 cp .profile-output/assets/hero-*.svg assets/
 ```
 
-Do not edit the generated `README.md` or `assets/*.svg` directly. Update `profile.yaml` or the post-processing scripts and regenerate the profile whenever the displayed content changes. The color post-processing step gives small accent text in the dark-theme SVG sufficient contrast while preserving the darker accents used by the light-theme SVG. The hero post-processing step removes the generated repository listing, and the README post-processing step keeps the simplified Terminal hero and adds responsive GitHub Stats cards while leaving repository discovery to GitHub's native pinned section.
+Do not edit the generated `README.md` or `assets/*.svg` directly. Update `profile.yaml` or the post-processing scripts and regenerate the profile whenever the displayed content changes. The color post-processing step gives small accent text in the dark-theme SVG sufficient contrast while preserving the darker accents used by the light-theme SVG. The hero post-processing step removes the generated repository listing, and the README post-processing step keeps the simplified Terminal hero and adds a left-aligned, responsive GitHub Stats card while leaving repository discovery to GitHub's native pinned section.
 
 ## Verification Checklist
 

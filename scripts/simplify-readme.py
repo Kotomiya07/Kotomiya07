@@ -15,6 +15,9 @@ def simplify_readme(path: Path) -> None:
         raise RuntimeError(f"Generated profile sections were not found in {path}")
 
     introduction = content.split(foreground_heading, maxsplit=1)[0].rstrip()
+    if not introduction.endswith("."):
+        introduction = f"{introduction}."
+
     stats_dark = (
         f"{STATS_BASE_URL}/api?username=Kotomiya07&amp;custom_title=Kotomiya07%27s%20GitHub%20Stats&amp;show_icons=true"
         "&amp;include_all_commits=true&amp;hide_border=true"
@@ -25,31 +28,13 @@ def simplify_readme(path: Path) -> None:
         "&amp;include_all_commits=true&amp;hide_border=true"
         "&amp;title_color=0969DA&amp;text_color=1F2328&amp;icon_color=0969DA&amp;bg_color=FFFFFF"
     )
-    languages_dark = (
-        f"{STATS_BASE_URL}/api/top-langs/?username=Kotomiya07&amp;layout=compact"
-        "&amp;langs_count=8&amp;hide_border=true"
-        "&amp;title_color=58A6FF&amp;text_color=C9D1D9&amp;bg_color=0D1117"
-    )
-    languages_light = (
-        f"{STATS_BASE_URL}/api/top-langs/?username=Kotomiya07&amp;layout=compact"
-        "&amp;langs_count=8&amp;hide_border=true"
-        "&amp;title_color=0969DA&amp;text_color=1F2328&amp;bg_color=FFFFFF"
-    )
-
     simplified = f"""{introduction}
 
-<p align="center">
+<p>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="{stats_dark}">
     <source media="(prefers-color-scheme: light)" srcset="{stats_light}">
-    <img alt="Kotomiya07 GitHub statistics" src="{stats_light}" width="495">
-  </picture>
-</p>
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="{languages_dark}">
-    <source media="(prefers-color-scheme: light)" srcset="{languages_light}">
-    <img alt="Kotomiya07 most used languages" src="{languages_light}" width="495">
+    <img alt="Kotomiya07 GitHub statistics" src="{stats_light}" width="450" align="top">
   </picture>
 </p>
 
