@@ -32,9 +32,15 @@ processes
             result = readme.read_text(encoding="utf-8")
 
         self.assertIn("<picture>hero</picture>", result)
-        self.assertIn("English tagline", result)
+        self.assertIn("English tagline.\n\n<p>", result)
         self.assertIn("Kotomiya07 GitHub statistics", result)
-        self.assertIn("Kotomiya07 most used languages", result)
+        self.assertNotIn("Kotomiya07 most used languages", result)
+        self.assertEqual(result.count("<p>"), 1)
+        self.assertNotIn('align="center"', result)
+        self.assertIn('alt="Kotomiya07 GitHub statistics"', result)
+        self.assertIn('width="450"', result)
+        self.assertEqual(result.count('align="top"'), 1)
+        self.assertNotIn("top-langs", result)
         self.assertNotIn("Foreground jobs", result)
         self.assertNotIn("Process tree", result)
 
